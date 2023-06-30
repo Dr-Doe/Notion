@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Notion Block</title>
+  <style>
+    /* Estilos para el bloque */
+    .notion-block {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .block-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .notion-block .btn-container {
+      margin-top: 10px;
+    }
+
+    .notion-block button {
+      background-color: transparent;
+      border: 1px solid #ccc;
+      padding: 10px;
+      cursor: pointer;
+      display: block;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+      transition: transform 0.2s, background-color 0.2s;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .notion-block button:hover {
+      transform: scale(1.05);
+      background-color: #f0f0f0;
+    }
+
+    .notion-block button img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="notion-block">
+    <div class="block-title">Quick Actions</div>
+    <div class="btn-container">
+      <button onclick="window.location.href='https://www.notion.so/CALENDAR-929fad7abed644d6be7d4d8362eacd3b?pvs=4#81642e6fffe64b7fa08700b7d8eb0468';">
+        <img src="icono_mas.png" alt="Note">
+        Note
+      </button>
+    </div>
+    <div class="btn-container">
+      <button onclick="window.location.href='https://www.notion.so/CALENDAR-929fad7abed644d6be7d4d8362eacd3b?pvs=4';">
+        <img src="icono_mas.png" alt="Appointment">
+        Appointment
+      </button>
+    </div>
+    <div class="btn-container">
+      <button onclick="window.location.href='https://example.com';">
+        <img src="icono_mas.png" alt="Task">
+        Task
+      </button>
+    </div>
+  </div>
+</body>
+</html>
